@@ -1,7 +1,7 @@
 """Tests for PESTEL Analysis"""
 
 import pytest
-from strategykit import PESTEL
+from business_frameworks import PESTEL
 
 
 def test_pestel_creation():

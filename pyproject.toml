@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "strategykit"
+name = "business-frameworks"
 version = "0.1.0"
 description = "Strategic framework toolkit for MBA students and business analysts"
 readme = "README.md"
@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hkj13/strategykit"
-Documentation = "https://strategykit.readthedocs.io"
-Repository = "https://github.com/hkj13/strategykit"
-Issues = "https://github.com/hkj13/strategykit/issues"
+Homepage = "https://github.com/hkj13/business-frameworks"
+Documentation = "https://business-frameworks.readthedocs.io"
+Repository = "https://github.com/hkj13/business-frameworks"
+Issues = "https://github.com/hkj13/business-frameworks/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -65,7 +65,7 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--cov=strategykit --cov-report=term-missing --cov-report=html"
+addopts = "--cov=business_frameworks --cov-report=term-missing --cov-report=html"
 
 [tool.mypy]
 python_version = "3.8"

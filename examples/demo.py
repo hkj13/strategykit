@@ -1,6 +1,6 @@
-"""StrategyKit Demo Examples"""
+"""Business Frameworks Demo Examples"""
 
-from strategykit import PortersFiveForces, SWOT, PESTEL
+from business_frameworks import PortersFiveForces, SWOT, PESTEL
 
 
 def demo_porters():

@@ -1,6 +1,6 @@
 """Tests for SWOT Analysis"""
 
-from strategykit import SWOT
+from business_frameworks import SWOT
 
 
 def test_swot_creation():

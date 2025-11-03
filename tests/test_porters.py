@@ -1,7 +1,7 @@
 """Tests for Porter's Five Forces"""
 
 import pytest
-from strategykit import PortersFiveForces
+from business_frameworks import PortersFiveForces
 
 
 def test_porters_creation():

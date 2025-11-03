@@ -1,4 +1,4 @@
-# StrategyKit 📊
+# Business Frameworks 📊
 
 A comprehensive Python toolkit for strategic business analysis, built specifically for MBA students, consultants, and business analysts.
 
@@ -14,7 +14,7 @@ A comprehensive Python toolkit for strategic business analysis, built specifical
 ## Installation
 
 ```bash
-pip install strategykit
+pip install business-frameworks
 ```
 
 ## Quick Start
@@ -22,7 +22,7 @@ pip install strategykit
 ### Porter's Five Forces Analysis
 
 ```python
-from strategykit import PortersFiveForces
+from business_frameworks import PortersFiveForces
 
 analysis = PortersFiveForces(
     industry="Smartphone Manufacturing",
@@ -43,7 +43,7 @@ analysis.plot()
 ### SWOT Analysis
 
 ```python
-from strategykit import SWOT
+from business_frameworks import SWOT
 
 swot = SWOT(
     company="TechCorp",
@@ -63,7 +63,7 @@ swot.export_pdf("swot_analysis.pdf")
 ### PESTEL Analysis
 
 ```python
-from strategykit import PESTEL
+from business_frameworks import PESTEL
 
 pestel = PESTEL(industry="E-commerce")
 pestel.add_factor("Political", "Trade policies", impact=4, likelihood=3)
@@ -85,8 +85,8 @@ pestel.plot_impact_matrix()
 
 ```bash
 # Clone the repository
-git clone https://github.com/hkj13/strategykit.git
-cd strategykit
+git clone https://github.com/hkj13/business-frameworks.git
+cd business-frameworks
 
 # Install in development mode
 pip install -e ".[dev]"
@@ -120,4 +120,4 @@ MIT License - see LICENSE file for details.
 ## Support
 
 - Documentation: [https://strategykit.readthedocs.io](https://strategykit.readthedocs.io)
-- Issues: [GitHub Issues](https://github.com/hkj13/strategykit/issues)
+- Issues: [GitHub Issues](https://github.com/hkj13/business-frameworks/issues)

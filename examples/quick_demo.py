@@ -1,9 +1,9 @@
 """Quick demo without plots"""
 
-from strategykit import PortersFiveForces, SWOT, PESTEL
+from business_frameworks import PortersFiveForces, SWOT, PESTEL
 
 print("\n" + "="*70)
-print("STRATEGYKIT DEMO - Strategic Framework Toolkit for MBA Students")
+print("BUSINESS FRAMEWORKS DEMO - Strategic Framework Toolkit for MBA Students")
 print("="*70)
 
 # Porter's Five Forces
