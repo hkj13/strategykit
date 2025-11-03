@@ -85,7 +85,7 @@ pestel.plot_impact_matrix()
 
 ```bash
 # Clone the repository
-git clone https://github.com/hkj1310/strategykit.git
+git clone https://github.com/hkj13/strategykit.git
 cd strategykit
 
 # Install in development mode
@@ -120,4 +120,4 @@ MIT License - see LICENSE file for details.
 ## Support
 
 - Documentation: [https://strategykit.readthedocs.io](https://strategykit.readthedocs.io)
-- Issues: [GitHub Issues](https://github.com/hkj1310/strategykit/issues)
+- Issues: [GitHub Issues](https://github.com/hkj13/strategykit/issues)
