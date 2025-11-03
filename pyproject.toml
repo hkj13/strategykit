@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/strategykit"
+Homepage = "https://github.com/hkj1310/strategykit"
 Documentation = "https://strategykit.readthedocs.io"
-Repository = "https://github.com/yourusername/strategykit"
-Issues = "https://github.com/yourusername/strategykit/issues"
+Repository = "https://github.com/hkj1310/strategykit"
+Issues = "https://github.com/hkj1310/strategykit/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
