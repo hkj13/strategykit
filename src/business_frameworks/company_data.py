@@ -16,8 +16,8 @@ class CompanyDataLoader:
     """Load pre-researched company analysis from our knowledge base."""
     
     def __init__(self):
-        # Find data directory
-        current_dir = Path(__file__).parent.parent.parent
+        # Find data directory (now inside the package)
+        current_dir = Path(__file__).parent
         self.data_dir = current_dir / "data" / "companies"
         
     def list_available_companies(self) -> List[str]:

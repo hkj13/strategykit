@@ -50,6 +50,9 @@ Issues = "https://github.com/hkj13/business-frameworks/issues"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+business_frameworks = ["data/companies/*.json"]
+
 [tool.black]
 line-length = 100
 target-version = ["py38", "py39", "py310", "py311"]
