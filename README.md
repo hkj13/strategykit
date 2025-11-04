@@ -58,12 +58,23 @@ analysis['porters'].plot()   # Industry analysis
 ```bash
 cd /Users/hk/CascadeProjects/strategykit
 pip install -e .
+
+# Verify installation works
+python verify_install.py
+```
+
+**⚠️ Important:** If you get errors about missing modules, reinstall:
+```bash
+pip install -e . --force-reinstall --no-deps
 ```
 
 ### From GitHub:
 
 ```bash
 pip install git+https://github.com/hkj13/strategykit.git
+
+# Verify installation
+python -c "from business_frameworks import SWOT; print('✅ Installation successful!')"
 ```
 
 ### From PyPI (Coming Soon):
@@ -476,21 +487,94 @@ Built for the MBA community with ❤️
 ## 🚀 Get Started Now!
 
 ```bash
-# Install
+# 1. Install the library
+cd /Users/hk/CascadeProjects/strategykit
 pip install -e .
 
-# Try the easiest example
+# 2. Verify everything works
+python verify_install.py
+
+# 3. Try the easiest example
 python -c "
 from business_frameworks.templates import get_example
 swot = get_example('starbucks')
-swot.plot()
+print('Company:', swot.company)
+print('Strengths:', len(swot.strengths))
 "
 
-# Or try curated data
+# 4. Try curated data (Apple analysis)
+python -c "
+from business_frameworks.company_data import load_company_analysis
+analysis = load_company_analysis('AAPL')
+print('✅ Loaded Apple analysis with', len(analysis['swot'].strengths), 'strengths')
+"
+
+# 5. Run full examples
+python examples/super_easy_mode.py
 python examples/using_curated_data.py
 ```
 
 **Questions?** Read `QUICK_START_GUIDE.md` or open an issue!
+
+**Troubleshooting?** See section below ⬇️
+
+---
+
+## 🔧 Troubleshooting
+
+### "ValueError: No data for AAPL"
+
+**Problem:** Company data not found after installation.
+
+**Solution:**
+```bash
+# Reinstall the package
+pip install -e . --force-reinstall --no-deps
+
+# Verify it works
+python verify_install.py
+```
+
+### "ModuleNotFoundError: No module named 'business_frameworks.company_data'"
+
+**Problem:** Package not fully installed.
+
+**Solution:**
+```bash
+# Full reinstall with dependencies
+pip install -e .
+
+# Or force reinstall
+pip uninstall business-frameworks
+pip install -e .
+```
+
+### "ImportError" or other errors
+
+**Solution:**
+```bash
+# Run verification script to diagnose
+python verify_install.py
+
+# Check your Python version (need 3.8+)
+python --version
+
+# Reinstall dependencies
+pip install matplotlib pandas numpy jinja2
+```
+
+### Visualizations not showing
+
+**Problem:** matplotlib backend issue.
+
+**Solution:**
+```python
+import matplotlib
+matplotlib.use('TkAgg')  # or 'Qt5Agg' or 'MacOSX'
+
+from business_frameworks import SWOT
+# ... rest of your code
+```
 
 ---
 
